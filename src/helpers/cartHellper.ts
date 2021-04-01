@@ -30,7 +30,7 @@ export function discountRow(product: Product, qty: number, unit: number) {
   }
 }
 
-export function total(items: { discount: number }[]) {
+export function totalAfterDiscount(items: { discount: number }[]) {
   return items
     .map(({ discount }) => discount)
     .reduce((sum: number, i: number) => sum + i, 0)

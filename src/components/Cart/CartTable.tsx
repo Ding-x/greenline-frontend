@@ -14,7 +14,7 @@ import {
   ccyFormat,
   createProductRow,
   initialProcuts,
-  total,
+  totalAfterDiscount,
 } from '../../helpers/cartHellper'
 
 interface Props {}
@@ -90,7 +90,9 @@ class CartTable extends React.Component<Props, State> {
             ))}
             <TableRow>
               <TableCell colSpan={5}>Total</TableCell>
-              <TableCell align="right">{ccyFormat(total(products))}</TableCell>
+              <TableCell align="right">
+                {ccyFormat(totalAfterDiscount(products))}
+              </TableCell>
             </TableRow>
           </TableBody>
         </Table>
