@@ -59,7 +59,7 @@ class CartTable extends React.Component<Props, State> {
               <TableCell align="center">Qty.</TableCell>
               <TableCell align="right">Unit</TableCell>
               <TableCell align="right">Before Discount</TableCell>
-              <TableCell>Discount reason</TableCell>
+              <TableCell>Discount Reason</TableCell>
               <TableCell align="right">After Discount</TableCell>
             </TableRow>
           </TableHead>
