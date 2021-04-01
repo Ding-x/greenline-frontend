@@ -10,7 +10,11 @@
     "prettier/react"
   ],
   "env": {
-    "jest": true
+    "jest": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true,
   },
   "rules": {
     // Make prettier code formatting suggestions more verbose.
@@ -18,7 +22,10 @@
     // Disable <Fragment> => <> replacement. Feel free to change
     "react/jsx-fragments": "off",
     // Disable prefer default export
-    "import/prefer-default-export": "off"
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/display-name": "off",
+    "no-param-reassign": [2, { "props": false }]
   },
   "overrides": [
     {
