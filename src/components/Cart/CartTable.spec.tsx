@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core'
 import CartTable from './CartTable'
 
-describe('Counter', () => {
+describe('cart table', () => {
   beforeEach(() => {})
 
   it('basic render', () => {

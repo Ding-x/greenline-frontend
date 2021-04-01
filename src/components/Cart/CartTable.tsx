@@ -82,7 +82,7 @@ class CartTable extends React.Component<Props, State> {
                     onChange={(e) => this.setProductQty(e, row.product)}
                   />
                 </TableCell>
-                <TableCell align="right">{row.unit}</TableCell>
+                <TableCell align="right">{ccyFormat(row.unit)}</TableCell>
                 <TableCell align="right">{ccyFormat(row.price)}</TableCell>
                 <TableCell>{row.discountDesc}</TableCell>
                 <TableCell align="right">{ccyFormat(row.discount)}</TableCell>
